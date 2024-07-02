@@ -19,7 +19,8 @@ do{
         case 1:
             fila.enqueue(leia.question("\nDigite o nome do cliente: "));
             console.log("\nCliente adicionado!");
-            
+            console.log("\nFila:"); 
+            fila.printQueue();
             break;
         case 2:
             if(fila.isEmpty() === true){
@@ -33,10 +34,9 @@ do{
             if(fila.isEmpty() === true){
                 console.log("\nA fila está vazia!");
             } else {
-                fila.dequeue()
+                console.log(`\nO(a) Cliente ${fila.dequeue()} foi chamado(a)!`);
                 console.log("\nFila:"); 
                 fila.printQueue();
-                console.log("O Cliente foi chamado!");
                 
             }
             break;
